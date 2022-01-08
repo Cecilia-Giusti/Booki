@@ -1,22 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Import de la police  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Règles de décoration  */
+.not_list_style {
+list-style: none;
+}
+
+.not_underline {
+    text-decoration: none;
+}
+
+/* Palette de couleurs  */
+.primary_color {
+    color:#0065FC
+}
+
+.secondary_color {
+    color: #DEEBFF;
+}
+
+.background_color {
+    background-color: #F2F2F2;
+}
 
 
+/* Pour tous les écrans */
 @media all { 
 body{
     box-sizing: border-box;
     width:100%;
     font-family: 'Raleway', sans-serif;
+}
+
+/* header */
+header {
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 30px;
+    object-fit:cover
+}
+
+nav ul{ 
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-left:40px;
+    font-size: 75%;
+    font-weight: 600;
     
 }
+
+nav li a {
+    padding-top:22px;
+    padding: 22px 20px 0px 20px;
+}
+
+nav a:hover{
+    color : #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+
+
+
 
 
  }
 
+
+
+/* Pour les tablettes  */
  @media (max-width: 991px) and (min-width: 768px) {
 
  }
 
-
+/* Pour les smartphones */
  @media (max-width: 767px) {
      
 }
