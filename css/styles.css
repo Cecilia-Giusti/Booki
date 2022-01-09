@@ -37,7 +37,7 @@ body{
 /* header */
 header {
     display:flex;
-    width:85%;
+    width:80%;
     margin:auto;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +47,7 @@ header {
 header img {
     height: 30px;
     object-fit:cover;
+    margin-top:10px;
 }
 
 /* Nav */
@@ -69,27 +70,25 @@ nav ul{
 
 nav ul li {
     margin:auto;
-    font-size: 70%;;
+    font-size: 80%;;
     font-weight: 600;
     box-sizing: border-box;
     width:100%;
     padding-top:10%;
     padding-bottom:5%;
     text-align: center;
-    border-top: 3px solid #ffffff;
+    border-top: 2px solid #ffffff;
     
     
 }
 
 
 nav li:hover{
-    border-top: 3px solid #0065FC;
-    
+    border-top: 2px solid #0065FC;
 }
 
 nav a:hover{
-    color : #0065FC;
-    
+    color : #0065FC; 
 }
 
  }
@@ -98,7 +97,20 @@ nav a:hover{
 
 /* Pour les tablettes  */
  @media (max-width: 991px) and (min-width: 768px) {
+    nav ul li {
+        margin-left:5%;
+        font-size: 90%;;
+        font-weight: 600;
+        box-sizing: border-box;
+        width:100%;
+        padding:10% 7% 5% 7%;
+        text-align: center;
+        border-top: 2px solid #ffffff; 
+    }
 
+    nav li:hover{
+        border-top: 2px solid #0065FC;
+    }
  }
 
 /* Pour les smartphones */
