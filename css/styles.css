@@ -151,10 +151,6 @@ main {
                     
                 }
 
-                #search:active{
-                    border:none;
-                }
-
                 #search_button {
                     background-color:#0065FC ;
                     color:white;
