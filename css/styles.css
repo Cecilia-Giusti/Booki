@@ -92,10 +92,6 @@ nav a:hover{
     color : #0065FC; 
 }
 
-nav a:visited {
-    color:black;
-}
-
 /* Main */
 main {
     width:83%;
