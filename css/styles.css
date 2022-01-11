@@ -11,6 +11,10 @@ list-style: none;
     text-decoration: none;
 }
 
+.capitalise{
+    text-transform: capitalize;
+}
+
 
 /* Palette de couleurs  */
 .primary_color {
@@ -165,6 +169,62 @@ main {
                 #search_icon, #search_icon_button {
                     visibility: hidden;
                 }
+            
+            /* Filtres  */
+
+                #filters {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    box-sizing: border-box;
+                    width:80%;
+                    margin-top:15px; 
+                    flex-wrap: wrap;
+                }
+
+                #filters p {
+                    font-weight: 800;
+                }
+
+                .filter{
+                    display: flex;
+                    align-items: center;
+                   
+                }
+
+                .filter i {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:#0065FC;
+                    background-color: #DEEBFF;
+                    box-sizing: border-box;
+                    border-radius: 25px 25px 25px 25px;
+                    height: 40px;
+                    width: 40px;
+                    margin-right:5px;
+                    
+                }
+
+                .filter p{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    border-top: 2px solid #F2F2F2;
+                    border-bottom: 2px solid #F2F2F2;
+                    border-right: 2px solid #F2F2F2;
+                    border-radius:25px 25px 25px 25px ;
+                    box-sizing: border-box;
+                    height: 40px;
+                    padding-right:15px;
+                    
+                }
+
+
+
+
+
+            
 
 }
 
