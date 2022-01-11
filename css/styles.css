@@ -1,6 +1,6 @@
 
 /* Import de la police  */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
 /* Règles de décoration  */
 .not_list_style {
@@ -10,6 +10,7 @@ list-style: none;
 .not_underline {
     text-decoration: none;
 }
+
 
 /* Palette de couleurs  */
 .primary_color {
@@ -91,12 +92,97 @@ nav a:hover{
     color : #0065FC; 
 }
 
- }
+nav a:visited {
+    color:black;
+}
+
+/* Main */
+main {
+    width:83%;
+    margin:auto;
+}
+    /* Premiere section  */
+        /* Section de recherche */
+            /* Titre et slogan */
+                #search_section h1 {
+                    font-size: 95%;
+                    font-weight: 700;
+                    margin-bottom:5px;
+                    margin-top:0px;
+                }
+
+                #search_section p {
+                    font-size: 70%;
+                    font-weight: 400;
+                    margin-top:0px;
+                }
+
+            /* Barre de recherche  */
+                #search_bar {
+                    display: flex;
+                    align-items: center;
+                    position:relative;
+                }
+
+                #icon_map {
+                    background-color: #f2f2f2;
+                    border-radius: 12px 0px 0px 12px;
+                    box-sizing: border-box;
+                    height:38px;
+                    width:33px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    
+                }
+
+                #search {
+                    border-top : 2px solid #f2f2f2;
+                    border-bottom : 2px solid #f2f2f2;
+                    border-left: none;
+                    border-right:none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                    height:38px;
+                    width:170px;
+                    padding-left:10px;
+                    
+                }
+
+                #search:active{
+                    border:none;
+                }
+
+                #search_button {
+                    background-color:#0065FC ;
+                    color:white;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight:500;
+                    font-size: 80%;
+                    border-radius: 0px 12px 12px 0px ;
+                    border-width:0px;
+                    box-sizing: border-box;
+                    height:38px;
+                    width:90px;
+                    display:flex;
+                    align-items: center;
+                }
+
+                #search_icon, #search_icon_button {
+                    visibility: hidden;
+                }
+
+}
 
 
 
 /* Pour les tablettes  */
  @media (max-width: 991px) and (min-width: 768px) {
+  /*Header*/  
+    /* Nav */
+    
     nav ul li {
         margin-left:5%;
         font-size: 90%;;
@@ -111,6 +197,80 @@ nav a:hover{
     nav li:hover{
         border-top: 2px solid #0065FC;
     }
+
+  /* Main */
+main {
+    width:90%;
+    margin:auto;
+}
+    /* Premiere section  */
+        /* Section de recherche */
+            /* Titre et slogan */
+                #search_section h1 {
+                    font-size: 18px;
+                    font-weight: 800;
+                    margin-bottom:5px;
+                    margin-top:20px;
+                }
+
+                #search_section p {
+                    font-size: 14px;
+                    margin-top:10px;
+                }
+
+            /* Barre de recherche  */
+                #search_bar {
+                    display: flex;
+                    align-items: center;
+                }
+
+                #icon_map {
+                    background-color: #F2F2F2;
+                    border-radius: 12px 0px 0px 12px;
+                    box-sizing: border-box;
+                    height:50px;
+                    width:50px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    
+                    
+                }
+
+                #search {
+                    border-top : 2px solid #F2F2F2;
+                    border-bottom : 2px solid #f2f2f2;
+                    border-left: none;
+                    border-right:none;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                    height:50px;
+                    max-width: 300px;
+                    width:100%;
+                    padding-left:20px;
+                    
+                }
+
+                #search_button {
+                    background-color:#0065FC ;
+                    color:white;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight:600;
+                    font-size: 14px;
+                    border-radius: 0px 12px 12px 0px ;
+                    border-width:0px;
+                    box-sizing: border-box;
+                    height:50px;
+                    width:100px;
+                    display:flex;
+                    align-items: center;
+                }
+
+             
+
  }
 
 /* Pour les smartphones */
@@ -122,6 +282,7 @@ nav a:hover{
         display:flex;
         width:100%;
         margin:auto;
+        margin-bottom:20px;
         flex-direction: column;
         padding-top:5%;
     }
@@ -156,9 +317,8 @@ nav a:hover{
         font-weight: 500;
         box-sizing: border-box;
         width:50%;
-        padding-bottom:3%;
-        padding-top:3%;
-        
+        padding-bottom:15px;
+        padding-top:12px;
     }
     
 
@@ -170,4 +330,86 @@ nav a:hover{
     nav a:hover{
         color : #0065FC;
     }
+
+
+     /* Main */
+main {
+    width:90%;
+    margin:auto;
+}
+    /* Premiere section  */
+        /* Section de recherche */
+            /* Titre et slogan */
+                #search_section h1 {
+                    font-size: 25px;
+                    font-weight: 800;
+                    margin-bottom:5px;
+                    margin-top:20px;
+                }
+
+                #search_section p {
+                    font-size: 18px;
+                    margin-top:10px;
+                }
+
+            /* Barre de recherche  */
+                #search_bar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+
+                #icon_map {
+                    background-color: #F2F2F2;
+                    border-radius: 12px 0px 0px 12px;
+                    box-sizing: border-box;
+                    height:60px;
+                    width:60px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                }
+
+                #search {
+                    border-top : 2px solid #F2F2F2;
+                    border-bottom : 2px solid #F2F2F2;
+                    border-left: none;
+                    border-right:none;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                    height:60px;
+                    max-width: 300px;
+                    width:100%;
+                    padding-left:20px;
+                    
+                }
+
+                #search_button {
+                    display:none;
+                }
+
+                #search_icon, #search_icon_button {
+                    visibility:visible;
+                }
+
+                #search_icon_button {
+                    background-color:#0065FC ;
+                    color:white;
+                    border-radius: 20px 20px 20px 20px ;
+                    border-width:0px;
+                    box-sizing: border-box;
+                    height:60px;
+                    width: 60px;
+                    font-size: 25px;
+                    position :relative;
+                    right:3%;
+                  
+                    
+                }
+
+
 }
