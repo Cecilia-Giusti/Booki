@@ -217,7 +217,14 @@ main {
                     box-sizing: border-box;
                     height: 40px;
                     padding-right:15px;
-                    
+                }
+
+                .filter p:hover{
+                    transition-duration: 0.6s;
+                    background-color: #DEEBFF;
+                    border-top: 2px solid #DEEBFF;
+                    border-bottom: 2px solid #DEEBFF;
+                    border-right: 2px solid #DEEBFF;
                 }
 
 
