@@ -96,6 +96,10 @@ nav li:hover{
 border-top: 2px solid #0065FC;
 }
 
+nav a{
+    color:black;
+}
+
 nav a:hover{
 color : #0065FC; 
 }
@@ -346,8 +350,6 @@ margin:auto;
 
 }
 
-
-
 /* Pour les tablettes  */
 @media (max-width: 991px) and (min-width: 768px) {
 /*Header*/  
@@ -555,6 +557,7 @@ box-sizing: border-box;
 width:50%;
 padding-bottom:15px;
 padding-top:12px;
+border-bottom: 4px solid white;
 }
 
 
@@ -574,7 +577,9 @@ width:90%;
 margin:auto;
 }
 /* Premiere section  */
+
 /* Section de recherche */
+
 /* Titre et slogan */
 #search_section h1 {
 font-size: 25px;
@@ -662,6 +667,10 @@ width:100%;
 display: flex;
 justify-content: flex-start;
 margin-left:0px;
+}
+
+.filter {
+    margin-left:10px;
 }
 
 .filter i {
