@@ -17,12 +17,16 @@ list-style: none;
 
 
 /* Palette de couleurs  */
-.primary_color {
+.first_color {
     color:#0065FC
 }
 
-.secondary_color {
+.second_color {
     color: #DEEBFF;
+}
+
+.third_color {
+    color:#F2F2F2;
 }
 
 .background_color {
@@ -228,10 +232,10 @@ main {
                     box-sizing: border-box;
                     height: 40px;
                     padding-right:15px;
+                    transition-duration: 0.6s;
                 }
 
                 .filter p:hover{
-                    transition-duration: 0.6s;
                     background-color: #DEEBFF;
                     border-top: 2px solid #DEEBFF;
                     border-bottom: 2px solid #DEEBFF;
@@ -271,6 +275,66 @@ main {
                 #informations_p {
                     margin-top:0px;
                 }
+        /* Section Hégerbement à marseille  */
+
+                /* Carte hébergement à marseille  */
+                .card {
+                    width:300px;
+                    background-color: white;
+                    box-shadow: 0px 5px 30px rgb(211, 211, 211);
+                    border-radius: 30px 30px 30px 30px;
+                    border : 7px solid white;
+                    transition-duration: 0.6s;
+                }
+
+                .card:hover{
+                    box-shadow: 0px 5px 30px rgb(165, 164, 164);
+                }
+
+                .card a {
+                    color: black; 
+                    text-decoration: none;
+                  }
+
+                  .card a h3{
+                      transition-duration: 0.3s;
+                  }
+
+                  .card a:hover h3{
+                      color:#0065FC;
+                  }
+
+                  .card-image {
+                      height: 140px;
+                      position:relative;
+                      overflow: hidden;
+                      border-radius: 30px 30px 0px 0px;
+                  }
+
+                  .card-image img{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    width:100%;
+                    object-fit:cover;
+                  }
+
+                  .card-body {
+                      padding: 10px 0px 5px 15px;
+                      box-sizing: border-box;
+                      
+                  }
+                  .card-body h3 {
+                    font-family: 'Raleway', sans-serif;
+                    margin:0px;
+                    font-weight: 700;
+                  }
+
+                  .card-body p {
+                      margin:8px 0px 8px;
+                  }
+
 
 
 
