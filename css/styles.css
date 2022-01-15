@@ -46,7 +46,7 @@ margin:0px;
 /* header */
 header {
 display:flex;
-width:80%;
+width:90%;
 margin:auto;
 justify-content: space-between;
 align-items: center;
@@ -106,26 +106,30 @@ color : #0065FC;
 
 /* Main */
 main {
-width:83%;
+width:93%;
 margin:auto;
 }
+
 /* Premiere section  */
+
 /* Section de recherche */
+
 /* Titre et slogan */
 #search_section h1 {
-    font-size: 95%;
+    font-size: 100%;
     font-weight: 700;
     margin-bottom:5px;
     margin-top:0px;
 }
 
 #search_section p {
-    font-size: 70%;
+    font-size: 80%;
     font-weight: 400;
     margin-top:0px;
 }
 
 /* Barre de recherche  */
+
 #search_bar {
     display: flex;
     align-items: center;
@@ -141,8 +145,6 @@ margin:auto;
     display:flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 #search {
@@ -156,7 +158,6 @@ margin:auto;
     height:38px;
     width:170px;
     padding-left:10px;
-    
 }
 
 #search_button {
@@ -193,6 +194,7 @@ margin:auto;
 
 #filters p {
     font-weight: 800;
+    font-size:80%;
 }
 
 #filters_categories{
@@ -280,20 +282,89 @@ margin:auto;
     margin-top:0px;
 }
 
-/* Section Hégerbement à marseille  */
+/* Section Hégerbement*/
+
+#accommodation {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-top:2%;
+}
+
+#accommodation h2{
+    font-size:100%;
+    font-weight: 800;
+}
+
+/* Section résultat des hébergements  */
+#accommodation-result{
+    display:flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    width:65%;
+    padding:2% 1% 2% 2%;
+    margin-right:4%;
+}
+
+#accommodation-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:15px;
+    width: 100%;
+}
+
+#more-accommodation a{
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-size:90%;
+    font-weight: 700;
+    margin-bottom:2%;
+}
+
+/* Aside - Les plus populaires  */
+
+#most-popular {
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    border-radius: 15px 15px 15px 15px;
+    padding:2%;
+}
+
+#most-popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#most-popular-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:3%;
+    height: 100%;
+}
+
+
 
 /* Carte hébergement à marseille  et carte des hébergements les plus populaires*/
+
 .accommodation-card {
-    width:300px;
+    box-sizing: border-box;
+    width:31%;
     background-color: white;
     box-shadow: 0px 5px 30px rgb(211, 211, 211);
-    border-radius: 30px 30px 30px 30px;
-    border : 7px solid white;
+    border-radius: 20px 20px 20px 20px;
+    border : 4px solid white;
     transition-duration: 0.6s;
+    margin-right:2%;
+    margin-bottom:30px;
 }
 
 .accommodation-card:hover, .most-popular-card:hover{
-    box-shadow: 0px 5px 30px rgb(165, 164, 164);
+    box-shadow: 0px 5px 20px rgb(146, 146, 146);
 }
 
 .accommodation-card a, .most-popular-card a {
@@ -301,19 +372,19 @@ margin:auto;
     text-decoration: none;
 }
 
-.accommodation-card a h3, .most-popular-card a h3{
+.accommodation-card a h3, .most-popular-card a h3, #more-accommodation a{
     transition-duration: 0.3s;
 }
 
-.accommodation-card a:hover h3, .most-popular-card a:hover h3{
+.accommodation-card a:hover h3, .most-popular-card a:hover h3, #more-accommodation a:hover{
     color:#0065FC;
 }
 
 .accommodation-card-image {
-    height: 140px;
+    height: 90px;
     position:relative;
     overflow: hidden;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .accommodation-card-image img{
@@ -326,29 +397,33 @@ margin:auto;
 }
 
 .accommodation-card-body {
-    padding: 10px 0px 5px 15px;
+    padding: 10px 0px 5px 10px;
     box-sizing: border-box;
+    width:100%;
     
 }
 .accommodation-card-body h3, .most-popular-card-body h3 {
     font-family: 'Raleway', sans-serif;
     margin:0px;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 90%;
+    width:100%;
 }
 
 .accommodation-card-body p, .most-popular-card-body p {
-    margin:8px 0px 8px;
+    margin:5px 0px 5px;
+    font-size:90%;
 }
 
 .most-popular-card {
     box-sizing: border-box;
     background-color: white;
     box-shadow: 0px 5px 30px rgb(211, 211, 211);
-    border-radius: 30px 30px 30px 30px;
-    border : 7px solid white;
+    border-radius: 20px 20px 20px 20px;
+    border : 3px solid white;
     transition-duration: 0.6s;
     width:100%;
-    max-width: 400px;
+    height: 126px;
 }
 
 .most-popular-card a {
@@ -357,9 +432,9 @@ margin:auto;
 
 .most-popular-card-image {
     overflow: hidden;
-    border-radius: 30px 0px 0px 30px;
-    width:140px;
-    height: 150px;
+    border-radius: 20px 0px 0px 20px;
+    width:110px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +447,7 @@ margin:auto;
 }
 
 .most-popular-card-body {
-    padding: 20px 0px 5px 15px;
+    padding: 10px 0px 5px 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
