@@ -2,11 +2,12 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page d'accueil Booki</title>
   <meta name="description" content="Prototype de la maquette Booky">
+  <meta name="keywords" content=" Maquette, HTML, CSS"/>
   <link rel="stylesheet" href="./css/normalize.css/" />
   <link rel="stylesheet" href="./css/styles.css" />
   <script src="https://kit.fontawesome.com/1365cabd78.js" crossorigin="anonymous"></script>
@@ -17,33 +18,33 @@
     <img src="images/logo/Booki.png  " alt="logo" />
     <nav>
       <ul>
-        <li class="not_list_style"><a class="not_underline" href="#accommodation-result">Hébergements</a></li>
-        <li class="not_list_style"><a class="not_underline" href="#activities">Activités</a></li>
+        <li class="not-list-style"><a class="not-underline" href="#accommodation-result">Hébergements</a></li>
+        <li class="not-list-style"><a class="not-underline" href="#activities">Activités</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="search_section">
+    <section class="search">
       <div>
         <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
       <div>
         <form method="post" action="search.php">
-          <div id="search_bar">
-            <i id="icon_map" class="fas fa-map-marker-alt fa-xs "></i>
+          <div class="search-bar">
+            <i class="icon-map fas fa-map-marker-alt fa-xs "></i>
             <input type="text" name="search" value="Marseille, France" id="search" />
-            <input type="submit" value="Rechercher" id="search_button" />
-            <button type="submit" id="search_icon_button">
-              <i id="search_icon" class="fas fa-search fa-xs"></i>
+            <input type="submit" value="Rechercher" id="search-button" />
+            <button type="submit" id="search-icon-button">
+              <i id="search-icon" class="fas fa-search fa-xs"></i>
             </button>
           </div>
         </form>
       </div>
-      <div id="filters">
+      <div class="filters">
         <p>Filtres</p>
-        <div id="filters_categories">
+        <div class="filters-categories">
           <div class="filter">
             <p class="capitalise"><i class="fas fa-money-bill-wave fa-lg"></i>
               économique</p>
@@ -62,16 +63,16 @@
           </div>
         </div>
       </div>
-      <div id="informations">
+      <div class="informations">
         <i class="fas fa-info fa-xs"></i>
-        <p id="informations_p">Plus de 500 logements sont disponibles dans cette ville</p>
+        <p class="informations-p">Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </section>
 
-    <section id="accommodation">
+    <section class="accommodation">
       <section id="accommodation-result">
         <h2> Hébergements à Marseille </h2>
-        <div id="accommodation-cards">
+        <div class="accommodation-cards">
           <div class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -86,11 +87,11 @@
                   <p>Nuit à partir de <b>25€</b></p>
                 </div>
                 <div class="accommodation-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -109,11 +110,11 @@
                   <p>Nuit à partir de 52<b>€</b></p>
                 </div>
                 <div class="accommodation-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -132,11 +133,11 @@
                   <p>Nuit à partir de 76<b>€</b></p>
                 </div>
                 <div class="accommodation-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -155,11 +156,11 @@
                   <p>Nuit à partir de 46<b>€</b></p>
                 </div>
                 <div class="accommodation-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -178,11 +179,11 @@
                   <p>Nuit à partir de <b>23€</b></p>
                 </div>
                 <div class="accommodation-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -201,26 +202,26 @@
                   <p>Nuit à partir de 96<b>€</b></p>
                 </div>
                 <div class="accommodation-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div id="more-accommodation">
-          <a href="#" class="not_underline">Afficher plus</a>
+        <div class="more-accommodation">
+          <a href="#" class="not-underline">Afficher plus</a>
         </div>
       </section>
-      <aside id="most-popular" class="background_color">
-        <div id="most-popular-title">
+      <aside class="most-popular background-color">
+        <div class="most-popular-title">
           <h2> Les plus populaires </h2>
           <i class="fas fa-chart-line fa-lg"></i>
         </div>
-        <div id="most-popular-cards">
+        <div class="most-popular-cards">
           <div class="most-popular-card">
             <a href="#">
               <div class="most-popular-card-image">
@@ -237,11 +238,11 @@
                   </div>
                 </div>
                 <div class="most-popular-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -262,11 +263,11 @@
                   </div>
                 </div>
                 <div class="most-popular-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -287,11 +288,11 @@
                   </div>
                 </div>
                 <div class="most-popular-card-stars">
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star first_color fa-xs"></i>
-                  <i class="fas fa-star third_color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star first-color fa-xs"></i>
+                  <i class="fas fa-star second-color fa-xs"></i>
                 </div>
               </div>
             </a>
@@ -304,30 +305,30 @@
     <section id="activities">
       <h2> Activités à Marseille</h2>
       <div class="activities-container">
-        <a href="#" class="activity-container-vertical not_underline black-color">
-          <div class="activity-container-vertical--image">
+        <a href="#" class="activity-container-vertical not-underline black-color">
+          <div class="activity-container-vertical-image">
             <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port de Marseille">
           </div>
           <h4>Vieux Port</h4>
         </a>
 
         <div class="activities-container-horizontal">
-          <a href="#" class="activity-container-horizontal not_underline black-color">
-            <div class="activity-container-horizontal--image">
+          <a href="#" class="activity-container-horizontal not-underline black-color">
+            <div class="activity-container-horizontal-image">
               <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
             </div>
             <h4>Fort de Pomègues</h4>
           </a>
-          <a href="#" class="activity-container-horizontal not_underline black-color">
-            <div class="activity-container-horizontal--image">
+          <a href="#" class="activity-container-horizontal not-underline black-color">
+            <div class="activity-container-horizontal-image">
               <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
             </div>
             <h4>Îles du Frioul</h4>
           </a>
         </div>
 
-        <a href="#" class="activity-container-vertical not_underline black-color">
-          <div class="activity-container-vertical--image">
+        <a href="#" class="activity-container-vertical not-underline black-color">
+          <div class="activity-container-vertical-image">
             <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="Parc national des Calanques">
           </div>
@@ -335,14 +336,14 @@
         </a>
 
         <div class="activities-container-horizontal">
-          <a href="#" class="activity-container-horizontal not_underline black-color">
-            <div class="activity-container-horizontal--image">
+          <a href="#" class="activity-container-horizontal not-underline black-color">
+            <div class="activity-container-horizontal-image">
               <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
             </div>
             <h4>Notre-Dame-de-la-Garde</h4>
           </a>
-          <a href="#" class="activity-container-horizontal not_underline black-color">
-            <div class="activity-container-horizontal--image">
+          <a href="#" class="activity-container-horizontal not-underline black-color">
+            <div class="activity-container-horizontal-image">
               <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
             </div>
             <h4>Parc Longchamp</h4>
@@ -352,10 +353,10 @@
     </section>
   </main>
 
-  <footer class="background_color">
+  <footer class="background-color">
     <div class="footer">
       <h5>A propos</h5>
-      <ul class="not_list_style">
+      <ul class="not-list-style">
         <li><a>Fonctionnement du site</a></li>
         <li><a>Conditions générales de vente</a></li>
         <li><a>Données et confidentialité</a></li>
@@ -363,14 +364,14 @@
     </div>
     <div class="footer">
       <h5>Nos hébergements</h5>
-      <ul class="not_list_style">
+      <ul class="not-list-style">
         <li><a>Charte qualité</a></li>
         <li><a>Soumettre votre hôtel</a></li>
       </ul>
     </div>
     <div class="footer"> 
       <h5>Assistance</h5>
-      <ul class="not_list_style">
+      <ul class="not-list-style">
         <li><a>Centre d'aide</a></li>
         <li><a>Nous contacter</a></li>
       </ul>
