@@ -158,7 +158,10 @@ box-sizing: border-box;
 height:38px;
 width:170px;
 padding-left:10px;
+outline-style: none;
+
 }
+
 
 #search-button {
 background-color:#0065FC ;
@@ -173,7 +176,15 @@ width:90px;
 display:flex;
 align-items: center;
 padding-left:10px;
+transition-duration: 0.3s;
+
 }
+
+#search-button:hover {
+    background-color:#0357d4 ;
+    transition-duration: 0.3s;
+}
+
 
 #search-icon, #search-icon-button {
 visibility: hidden;
@@ -241,7 +252,7 @@ padding-right:15px;
 transition-duration: 0.6s;
 }
 
-.filter p:hover{
+.filter p:hover {
 background-color: #DEEBFF;
 border-top: 2px solid #DEEBFF;
 border-bottom: 2px solid #DEEBFF;
