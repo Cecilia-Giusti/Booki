@@ -7,15 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page d'accueil Booki</title>
   <meta name="description" content="Prototype de la maquette Booky">
-  <meta name="keywords" content=" Maquette, HTML, CSS"/>
+  <meta name="keywords" content=" Maquette, HTML, CSS" />
   <link rel="stylesheet" href="./css/normalize.css/" />
   <link rel="stylesheet" href="./css/styles.css" />
   <script src="https://kit.fontawesome.com/1365cabd78.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <!-- En tête de la page  -->
   <header>
+
+    <!-- Logo de Booki -->
     <img src="images/logo/Booki.png  " alt="logo" />
+
+    <!-- Menu de navigation  -->
     <nav>
       <ul>
         <li class="not-list-style"><a class="not-underline" href="#accommodation-result">Hébergements</a></li>
@@ -25,12 +31,16 @@
   </header>
 
   <main>
+
+    <!-- Premiere section - Section de recherche  -->
     <section class="search">
       <div>
         <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
       <div>
+
+        <!-- Barre de recherche  -->
         <form method="post" action="search.php">
           <div class="search-bar">
             <i class="icon-map fas fa-map-marker-alt fa-xs "></i>
@@ -42,6 +52,8 @@
           </div>
         </form>
       </div>
+
+      <!-- Filtres  -->
       <div class="filters">
         <p>Filtres</p>
         <div class="filters-categories">
@@ -63,16 +75,20 @@
           </div>
         </div>
       </div>
+
+      <!-- Nombre de logements -->
       <div class="informations">
         <i class="fas fa-info fa-xs"></i>
         <p class="informations-p">Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </section>
-
+    
+    <!-- Section des hébergement  -->
     <section class="accommodation">
       <section id="accommodation-result">
         <h2> Hébergements à Marseille </h2>
         <div class="accommodation-cards">
+
           <article class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -96,6 +112,7 @@
               </div>
             </a>
           </article>
+
           <article class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -119,6 +136,7 @@
               </div>
             </a>
           </article>
+
           <article class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -142,6 +160,7 @@
               </div>
             </a>
           </article>
+
           <article class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -165,6 +184,7 @@
               </div>
             </a>
           </article>
+
           <article class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -188,6 +208,7 @@
               </div>
             </a>
           </article>
+
           <article class="accommodation-card">
             <a href="#">
               <div class="accommodation-card-image">
@@ -211,17 +232,22 @@
               </div>
             </a>
           </article>
+
         </div>
+        <!-- Afficher plus d'hebergement  -->
         <div class="more-accommodation">
           <a href="#" class="not-underline">Afficher plus</a>
         </div>
       </section>
+
+      <!-- Aside - Les logements les plus populaires  -->
       <aside class="most-popular background-color">
         <div class="most-popular-title">
           <h2> Les plus populaires </h2>
           <i class="fas fa-chart-line fa-lg"></i>
         </div>
         <div class="most-popular-cards">
+
           <article class="most-popular-card">
             <a href="#">
               <div class="most-popular-card-image">
@@ -247,6 +273,7 @@
               </div>
             </a>
           </article>
+
           <article class="most-popular-card">
             <a href="#">
               <div class="most-popular-card-image">
@@ -272,6 +299,7 @@
               </div>
             </a>
           </article>
+
           <article class="most-popular-card">
             <a href="#">
               <div class="most-popular-card-image">
@@ -302,6 +330,7 @@
       </aside>
     </section>
 
+    <!-- Section des activités  -->
     <section id="activities">
       <h2> Activités à Marseille</h2>
       <div class="activities-container">
@@ -349,10 +378,12 @@
             <h4>Parc Longchamp</h4>
           </a>
         </div>
+
       </div>
     </section>
   </main>
 
+  <!-- Pied de page  -->
   <footer class="background-color">
     <div class="footer">
       <h5>A propos</h5>
@@ -369,7 +400,7 @@
         <li><a>Soumettre votre hôtel</a></li>
       </ul>
     </div>
-    <div class="footer"> 
+    <div class="footer">
       <h5>Assistance</h5>
       <ul class="not-list-style">
         <li><a>Centre d'aide</a></li>
@@ -378,5 +409,4 @@
     </div>
   </footer>
 </body>
-
 </html>
