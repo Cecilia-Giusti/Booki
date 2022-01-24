@@ -516,13 +516,13 @@ font-family: 'Raleway', sans-serif;
     transition-duration: 0.6s;
 }
 
-.activity-container-vertical:hover, .activity-container-horizontal:hover{
+.activity-container-vertical:hover, .activity-container-horizontal:hover, .activity-container-horizontal-1:hover, .activity-container-horizontal-2:hover{
     box-shadow: 0px 5px 30px rgb(165, 164, 164);
     transition-duration: 0.6s;
     
 }
 
-.activity-container-vertical:hover h4, .activity-container-horizontal:hover h4{
+.activity-container-vertical:hover h4, .activity-container-horizontal:hover h4, .activity-container-horizontal-1:hover h4, .activity-container-horizontal-2:hover h4{
     color:#0065FC;
     transition-duration: 0.3s;
 }
