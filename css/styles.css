@@ -88,8 +88,6 @@ padding-top:10%;
 padding-bottom:5%;
 text-align: center;
 border-top: 2px solid #ffffff;
-
-
 }
 
 
@@ -223,13 +221,11 @@ align-items: center;
 margin-left:20px;
 width:90%;
 flex-wrap: wrap;
-
 }
 
 .filter{
 display: flex;
 align-items: center;
-
 }
 
 .filter i {
@@ -641,57 +637,33 @@ footer {
     margin-bottom: 10px;
 
 }
-
-
-
-
-
-
-
-
 }
 
 /* Pour les tablettes  */
 @media (max-width: 991px) and (min-width: 768px) {
 /*Header*/
 
-header{
-    width:90%;
-}
-
 header img {
     height: 40px;
-    object-fit:cover;
-    margin-top:10px;
     }
 /* Nav */
 
 nav ul li {
 font-size: 90%;;
-font-weight: 600;
-box-sizing: border-box;
-width:100%;
 padding:10% 7% 5% 7%;
-text-align: center;
-border-top: 2px solid #ffffff; 
-}
-
-nav li:hover{
-border-top: 2px solid #0065FC;
 }
 
 /* Main */
 main {
 width:95%;
-margin:auto;
 }
+
 /* Premiere section  */
 /* Section de recherche */
 /* Titre et slogan */
 .search h1 {
 font-size: 18px;
 font-weight: 800;
-margin-bottom:5px;
 margin-top:20px;
 }
 
@@ -701,68 +673,40 @@ margin-top:10px;
 }
 
 /* Barre de recherche  */
-.search-bar {
-display: flex;
-align-items: center;
-}
 
 .icon-map {
-background-color: #F2F2F2;
-border-radius: 12px 0px 0px 12px;
-box-sizing: border-box;
 height:50px;
 width:50px;
-display:flex;
-justify-content: center;
-align-items: center;
 font-size: 15px;
 }
 
 form .fas {
-    display :flex;
     font-size:18px;
 }
 
 #search {
-border-top : 2px solid #F2F2F2;
-border-bottom : 2px solid #f2f2f2;
-border-left: none;
-border-right:none;
-font-family: 'Raleway', sans-serif;
 font-size: 18px;
-font-weight: 700;
-box-sizing: border-box;
 height:50px;
 max-width: 300px;
 width:100%;
 padding-left:20px;
-
 }
 
 #search-button {
-background-color:#0065FC ;
-color:white;
 font-weight:600;
 font-size: 14px;
-border-radius: 0px 12px 12px 0px ;
-border-width:0px;
-box-sizing: border-box;
 height:50px;
 width:120px;
-display:flex;
 justify-content: center;
-align-items: center;
 }
 
 /* Filtres */
 
 .filters {
-display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 width:100%;
-
 }
 
 .filters-categories {
@@ -776,30 +720,15 @@ margin:10px;
 }
 
 .filter i {
-display: flex;
-justify-content: center;
-align-items: center;
-color:#0065FC;
-background-color: #DEEBFF;
-box-sizing: border-box;
-border-radius: 30px 30px 30px 30px;
 height: 60px;
 width: 60px;
-margin-right:5px;
-
 }
 
 .filter p{
-display: flex;
-justify-content: flex-end;
-align-items: center;
 border-top: 3px solid #F2F2F2;
 border-bottom: 3px solid #F2F2F2;
 border-right: 3px solid #F2F2F2;
-border-radius:30px 30px 30px 30px ;
-box-sizing: border-box;
 height: 60px;
-padding-right:15px;
 }
 
 .filter p:hover{
@@ -823,16 +752,11 @@ margin-top:0px;
 /* Section Hégerbement*/
 
 .accommodation {
-    display:flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    width:100%;
-    margin-top:2%;
     }
     
     .accommodation h2{
     font-size:18px;
-    font-weight: 800;
     padding-top:20px;
     }
     
@@ -840,8 +764,6 @@ margin-top:0px;
     
     /* Section résultat des hébergements  */
     #accommodation-result{
-    display:flex;
-    flex-direction: column;
     width:95%;
     margin: auto;
     margin-top:2%;
@@ -850,12 +772,7 @@ margin-top:0px;
     }
     
     .accommodation-cards {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top:15px;
-    width: 100%;
     }
 
     .more-accommodation {
@@ -863,26 +780,17 @@ margin-top:0px;
     }
     
     .more-accommodation a{
-    color:black;
-    font-family: 'Raleway', sans-serif;
     font-size:100%;
-    font-weight: 700;
-    margin-bottom:2%;
     }
     
     /* Aside - Les plus populaires  */
     
     .most-popular {
-    display:flex;
-    flex-direction: column;
     width:100%;
     padding:0%;
     }
     
     .most-popular-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width:90%;
     margin:auto;
     }
@@ -892,8 +800,6 @@ margin-top:0px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    margin-top:3%;
     width: 100%;
     margin: auto;
     padding-top:10px;
@@ -903,89 +809,28 @@ margin-top:0px;
     /* Carte hébergement à marseille  et carte des hébergements les plus populaires*/
     
     .accommodation-card {
-        box-sizing: border-box;
         width:50%;
-        box-shadow: 0px 5px 30px rgb(211, 211, 211);
-        border-radius: 20px 20px 20px 20px;
-        border : 4px solid white;
-        transition-duration: 0.6s;
         margin-bottom:15px;
         }
         
-        .accommodation-card-image {
-        height: 90px;
-        position:relative;
-        overflow: hidden;
-        border-radius: 20px 20px 0px 0px;
-        }
         
-        .accommodation-card-image img{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        width:100%;
-        object-fit:cover;
-        }
         
-        .accommodation-card-body {
-        padding: 10px 0px 5px 10px;
-        box-sizing: border-box;
-        width:100%;
-        
-        }
         .accommodation-card-body h3, .most-popular-card-body h3 {
-        font-family: 'Raleway', sans-serif;
-        margin:0px;
-        font-weight: 800;
         font-size: 14px;
-        width:100%;
         }
         
         .accommodation-card-body p, .most-popular-card-body p {
         margin:5px 0px 0px;
-        font-size:90%;
         }
         
         .most-popular-card {
-        box-sizing: border-box;
-        box-shadow: 0px 5px 30px rgb(211, 211, 211);
-        border-radius: 20px 20px 20px 20px;
-        border : 3px solid #fff;
-        transition-duration: 0.6s;
         width:40%;
-        height: 126px;
         margin-bottom:10px;
-        background-color: #fff;
-        }
-        
-        .most-popular-card a {
-        display:flex;
+       
         }
         
         .most-popular-card-image {
-        overflow: hidden;
-        border-radius: 20px 0px 0px 20px;
         width:150px;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        
-        .most-popular-card-image img{
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-        }
-        
-        .most-popular-card-body {
-        padding: 10px 0px 5px 15px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width:50%;
         }
 
 
@@ -998,7 +843,6 @@ margin-top:0px;
     
     #activities h2{
     font-size:18px;
-    font-weight: 800;
     }
 
     #activities h4{
