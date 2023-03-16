@@ -52,11 +52,17 @@ margin:auto;
 justify-content: space-between;
 align-items: center;
 padding-bottom:2%;
+height: 100px;
+}
+
+.link-logo{
+    width: 100%;
 }
 
 header img {
-height: 30px;
-object-fit:cover;
+width:15%;
+-o-object-fit:cover;
+   object-fit:cover;
 margin-top:10px;
 }
 
@@ -65,6 +71,9 @@ margin-top:10px;
 nav{
 box-sizing: border-box;
 width: 25%;
+display: flex;
+height: 100%;
+align-items: center;
 }
 
 nav ul{ 
@@ -73,33 +82,47 @@ box-sizing: border-box;
 width:100%;
 justify-content: space-between;
 align-items: center;
-padding-inline-start: 0px;
-margin-block-start: 0em;
-margin-block-end: 0em;
+-webkit-padding-start: 0px;
+        padding-inline-start: 0px;
+-webkit-margin-before: 0em;
+        margin-block-start: 0em;
+-webkit-margin-after: 0em;
+        margin-block-end: 0em;
+        height: 100%;
+      height: 100%;
 }
 
 nav ul li {
-margin:auto;
-font-size: 80%;;
+height: 100%;
+display: flex;
+align-items: center;
+flex: 1;
 font-weight: 600;
+height: 100%;
+flex: 1;
 box-sizing: border-box;
 width:100%;
-padding-top:10%;
-padding-bottom:5%;
 text-align: center;
-border-top: 2px solid #ffffff;
+justify-content: center;
+position: relative;
 }
 
 
-nav li:hover{
-border-top: 2px solid #0065FC;
+nav ul li:hover a:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background-color: #0065FC;
 }
 
 nav a{
 color:black;
 }
 
-nav a:hover{
+nav li:hover a{
 color : #0065FC; 
 }
 
@@ -226,6 +249,7 @@ flex-wrap: wrap;
 .filter{
 display: flex;
 align-items: center;
+cursor: pointer;
 }
 
 .filter i {
@@ -317,7 +341,6 @@ font-weight: 800;
 display:flex;
 flex-direction: column;
 border-radius: 15px 15px 15px 15px;
-width:65%;
 padding:2% 1% 2% 2%;
 margin-right:4%;
 background-color: #F2F2F2;
@@ -325,10 +348,12 @@ background-color: #F2F2F2;
 
 .accommodation-cards {
 display: flex;
-justify-content: space-between;
+justify-content: flex-start;
 flex-wrap: wrap;
 margin-top:15px;
 width: 100%;
+gap:20px;
+padding-bottom:20px;
 }
 
 .more-accommodation a{
@@ -370,14 +395,12 @@ height: 100%;
 
 .accommodation-card {
 box-sizing: border-box;
-width:31%;
+width:90%;
 max-width:211px;
 box-shadow: 0px 5px 30px rgb(211, 211, 211);
 border-radius: 20px 20px 20px 20px;
 border : 4px solid #fff;
 transition-duration: 0.6s;
-margin-right:2%;
-margin-bottom:30px;
 background-color: #fff;
 overflow: hidden;
 }
@@ -411,7 +434,8 @@ top:50%;
 left:50%;
 transform: translate(-50%, -50%);
 width:100%;
-object-fit:cover;
+-o-object-fit:cover;
+   object-fit:cover;
 border-radius: 20px 20px 0px 0px;
 }
 
@@ -464,7 +488,8 @@ overflow: hidden;
 .most-popular-card-image img{
 width:100%;
 height: 100%;
-object-fit: cover;
+-o-object-fit: cover;
+   object-fit: cover;
 border-radius: 20px 0px 0px 20px;
 }
 
@@ -536,7 +561,8 @@ font-family: 'Raleway', sans-serif;
 .activity-container-vertical-image img {
     height:100%;
     border-radius: 20px 20px 0px 0px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .activity-container-vertical h4, .activity-container-horizontal h4, .activity-container-horizontal-1 h4, .activity-container-horizontal-2 h4 {
@@ -602,7 +628,8 @@ font-family: 'Raleway', sans-serif;
 .activity-container-horizontal-image img {
     width:100%;
     border-radius: 20px 20px 0px 0px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 
@@ -642,11 +669,6 @@ footer {
 
 /* Pour les tablettes  */
 @media (max-width: 991px) and (min-width: 768px) {
-/*Header*/
-
-header img {
-    height: 40px;
-    }
 /* Nav */
 
 nav ul li {
@@ -869,7 +891,7 @@ padding-top:5%;
 }
 
 header img {
-height: 40px;
+    width: 25%;
 text-align: center;
 }
 
@@ -881,7 +903,8 @@ margin-top:4%;
 }
 
 nav ul{ 
-padding-inline-start: 0px;
+-webkit-padding-start: 0px; 
+        padding-inline-start: 0px;
 }
 
 nav ul li {
@@ -1110,7 +1133,8 @@ padding-bottom:20px;
     
     .accommodation-card-image img{
     width:100%;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
     }
     
     
@@ -1182,7 +1206,8 @@ padding-bottom:20px;
     
     .activity-container-vertical-image img, .activity-container-horizontal-image  img{
     width:100%;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
     height: 100%;
     }
 
